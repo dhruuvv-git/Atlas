@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <h2>Atlas</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="marks.html">Marks Calculator</a></li>
+      <li><a href="cgpa.html">CGPA Calculator</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Have a question? Fill in the form below.</p>
+
+    <div class="card">
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Your name">
+
+      <label>Email</label>
+      <input type="email" id="email" placeholder="you@example.com">
+
+      <label>Message</label>
+      <textarea id="message" rows="4" placeholder="Write your message"></textarea>
+
+      <button onclick="submitForm()">Send</button>
+
+      <div id="contactResult" class="result"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Atlas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

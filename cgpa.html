@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas - CGPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <h2>Atlas</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="marks.html">Marks Calculator</a></li>
+      <li><a href="cgpa.html" class="active">CGPA Calculator</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>CGPA Calculator</h1>
+    <p>Enter the subject name, its credits and the grade you got.</p>
+
+    <div class="card">
+      <table id="cgpaTable">
+        <tr>
+          <th>Subject</th>
+          <th>Credits</th>
+          <th>Grade</th>
+        </tr>
+        <tr>
+          <td><input type="text" class="subName" placeholder="Subject 1"></td>
+          <td><input type="number" class="credit" placeholder="e.g. 4"></td>
+          <td>
+            <select class="grade">
+          <option value="">Select</option>
+          <option value="10">O (10)</option>
+          <option value="9">A+ (9)</option>
+          <option value="8">A (8)</option>
+          <option value="7">B+ (7)</option>
+          <option value="6">B (6)</option>
+          <option value="5">C (5)</option>
+          <option value="4">P (4)</option>
+          <option value="0">F (0)</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" class="subName" placeholder="Subject 2"></td>
+          <td><input type="number" class="credit" placeholder="e.g. 4"></td>
+          <td>
+            <select class="grade">
+          <option value="">Select</option>
+          <option value="10">O (10)</option>
+          <option value="9">A+ (9)</option>
+          <option value="8">A (8)</option>
+          <option value="7">B+ (7)</option>
+          <option value="6">B (6)</option>
+          <option value="5">C (5)</option>
+          <option value="4">P (4)</option>
+          <option value="0">F (0)</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" class="subName" placeholder="Subject 3"></td>
+          <td><input type="number" class="credit" placeholder="e.g. 4"></td>
+          <td>
+            <select class="grade">
+          <option value="">Select</option>
+          <option value="10">O (10)</option>
+          <option value="9">A+ (9)</option>
+          <option value="8">A (8)</option>
+          <option value="7">B+ (7)</option>
+          <option value="6">B (6)</option>
+          <option value="5">C (5)</option>
+          <option value="4">P (4)</option>
+          <option value="0">F (0)</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" class="subName" placeholder="Subject 4"></td>
+          <td><input type="number" class="credit" placeholder="e.g. 4"></td>
+          <td>
+            <select class="grade">
+          <option value="">Select</option>
+          <option value="10">O (10)</option>
+          <option value="9">A+ (9)</option>
+          <option value="8">A (8)</option>
+          <option value="7">B+ (7)</option>
+          <option value="6">B (6)</option>
+          <option value="5">C (5)</option>
+          <option value="4">P (4)</option>
+          <option value="0">F (0)</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" class="subName" placeholder="Subject 5"></td>
+          <td><input type="number" class="credit" placeholder="e.g. 4"></td>
+          <td>
+            <select class="grade">
+          <option value="">Select</option>
+          <option value="10">O (10)</option>
+          <option value="9">A+ (9)</option>
+          <option value="8">A (8)</option>
+          <option value="7">B+ (7)</option>
+          <option value="6">B (6)</option>
+          <option value="5">C (5)</option>
+          <option value="4">P (4)</option>
+          <option value="0">F (0)</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+
+      <button onclick="addSubject()">Add Subject</button>
+      <button onclick="calculateCGPA()">Calculate CGPA</button>
+
+      <div id="cgpaResult" class="result"></div>
+    </div>
+
+    <div class="card">
+      <h3>Grade Points</h3>
+      <p>O = 10, A+ = 9, A = 8, B+ = 7, B = 6, C = 5, P = 4, F = 0</p>
+      <p>CGPA = Sum of (Credits × Grade Points) ÷ Total Credits</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Atlas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

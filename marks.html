@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas - Marks Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <h2>Atlas</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="marks.html" class="active">Marks Calculator</a></li>
+      <li><a href="cgpa.html">CGPA Calculator</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Marks Calculator</h1>
+    <p>Enter marks out of 100 for each subject.</p>
+
+    <div class="card">
+      <label>Subject 1</label>
+      <input type="number" id="sub1" placeholder="0 - 100">
+
+      <label>Subject 2</label>
+      <input type="number" id="sub2" placeholder="0 - 100">
+
+      <label>Subject 3</label>
+      <input type="number" id="sub3" placeholder="0 - 100">
+
+      <label>Subject 4</label>
+      <input type="number" id="sub4" placeholder="0 - 100">
+
+      <label>Subject 5</label>
+      <input type="number" id="sub5" placeholder="0 - 100">
+
+      <button onclick="calculateMarks()">Calculate</button>
+
+      <div id="marksResult" class="result"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Atlas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
